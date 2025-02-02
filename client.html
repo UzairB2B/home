@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Clients</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #fcfde7;
+            text-align: center;
+            padding: 20px;
+            color: #333;
+            margin: 0;
+        }
+        .section {
+            padding: 30px;
+            margin: 20px auto;
+            border-radius: 16px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            max-width: 90%;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .clients-section {
+            background: linear-gradient(135deg, #5eabfe, #002f61);
+            color: #fff;
+            overflow: hidden;
+        }
+        .certifications-section {
+            background: linear-gradient(135deg, #66da00, #006d0d);
+            color: #fff;
+            overflow: hidden;
+        }
+        .title {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .logos, .certifications {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 20px;
+            white-space: nowrap;
+        }
+        .logos {
+            animation: moveRight 10s linear infinite;
+        }
+        .certifications {
+            animation: moveLeft 10s linear infinite;
+        }
+        .logos img, .certifications img {
+            width: 160px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease-in-out;
+        }
+        .logos img:hover, .certifications img:hover {
+            transform: scale(1.1);
+        }
+        .logo-item span {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: #e9ecef;
+            font-size: 14px;
+            color: #555;
+        }
+        @keyframes moveRight {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        @keyframes moveLeft {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        @media (max-width: 768px) {
+            .logos img, .certifications img {
+                width: 120px;
+            }
+            .title {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="section clients-section">
+        <div class="title">Our Clients</div>
+        <div class="logos">
+            <div class="logo-item">
+                <img src="https://hpgif.in/images/HPGIF-Logo.png" alt="HPGIF">
+                <span>HPGIF</span>
+            </div>
+            <div class="logo-item">
+                <img src="https://media.licdn.com/dms/image/v2/D560BAQGK04_E79chLg/company-logo_200_200/company-logo_200_200/0/1731070431625?e=2147483647&v=beta&t=4FHozv7386nDYTgS3xoR55O9D9x-JQreViwyYG70838" alt="TECHOGIES">
+                <span>TECHOGIES</span>
+            </div>
+            <div class="logo-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt3MNMO5Nm4EyT4hFLtBmgWAtm0nqyEkKgvw&s" alt="SEG Academy">
+                <span>SEG Academy</span>
+            </div>
+        </div>
+    </div>
+    <div class="section certifications-section">
+        <div class="title">Our Certifications</div>
+        <div class="certifications">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2020/12/TH/GN/HB/61456754/startup-india-logo1-02-500x500.png" alt="Startup India">
+            <img src="https://mysba.co.in/wp-content/uploads/2024/02/MSME1.png" alt="MSME Certified">
+            <img src="https://www.startinup.up.gov.in/crm/assets/website/assets/Home_files/upstart_logo.png" alt="UP Startup">
+        </div>
+    </div>
+    <footer>
+        Developed by Uzair Ahmed @ 2025
+    </footer>
+</body>
+</html>
