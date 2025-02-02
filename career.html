@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UZAIR B2B SERVICES CAREERS</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #1900ff;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        /* Button Styles */
+        .button {
+            display: inline-block;
+            padding: 17px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, transform 0.3s;
+            margin: 10px;
+        }
+        /* Glowing Button (Fill the Form) */
+        .glowing-button {
+            background: #40c100;
+            position: relative;
+            overflow: hidden;
+            display: block;
+            margin: 20px auto;
+        }
+        .glowing-button::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(64, 193, 0, 0.4) 0%, transparent 70%);
+            transform: scale(0);
+            opacity: 0;
+            transition: transform 0.5s, opacity 0.5s;
+        }
+        .glowing-button:hover::before {
+            transform: scale(1);
+            opacity: 1;
+        }
+        .glowing-button:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+        }
+        /* Skills Section */
+        .skills-section {
+            margin-top: 30px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .skills-button {
+            background: #ff5733;
+        }
+        .skills-button:hover {
+            background: #ff0000;
+            transform: scale(1.05);
+        }
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: #e9ecef;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>UZAIR B2B SERVICES CAREERS</h1>
+        <p>Work with me and become my team.<br>
+           If you are an aspiring web developer (front-end or back-end), Figma UI/UX developer, AutoCAD specialist, social media marketing expert, digital creator, and more — join me!</p>
+        
+        <!-- Centered Call-to-action Button -->
+        <a href="https://forms.gle/JhmM48xz45mM1LYs5" class="button glowing-button">Fill the Form</a>
+        
+        <!-- Skills Section Below -->
+        <div class="skills-section">
+            <p>If you don't have a skill and want to learn, click here:</p>
+            <a href="https://educationsimplified.github.io/mgkvp/skills.html" class="button skills-button">Learn Skills</a>
+        </div>
+    </div>
+    <footer>
+        Developed by: Uzair Ahmed @2025
+        </footer>
+</body>
+</html>
