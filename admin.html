@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0000ff, #ff0000);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+        }
+        .login-box {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(15px);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+            color: white;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .btn-primary {
+            background: linear-gradient(90deg, #ff0000, #0000ff);
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(90deg, #0000ff, #ff0000);
+        }
+        .form-control {
+            background: white;
+            color: black;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <img src="https://educationsimplified.github.io/mgkvp/20250125_115304.png" alt="Logo" class="mb-4 mx-auto w-32">
+        <h2 class="text-white text-2xl font-bold">Admin Login</h2>
+        <input type="text" id="adminName" class="form-control" placeholder="Admin Name">
+        <div class="relative">
+            <input type="password" id="adminPassword" class="form-control" placeholder="Password">
+            <button type="button" class="absolute inset-y-0 right-2 top-4 text-black" onclick="togglePassword()">👁</button>
+        </div>
+        <button class="btn-primary w-full mt-4" onclick="validateLogin()">Login</button>
+    </div>
+
+    <script>
+        function togglePassword() {
+            const passwordField = document.getElementById('adminPassword');
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+            } else {
+                passwordField.type = 'password';
+            }
+        }
+
+        function validateLogin() {
+            const adminName = document.getElementById('adminName').value;
+            const adminPassword = document.getElementById('adminPassword').value;
+            if (adminName === 'uzairb2badmin' && adminPassword === 'uzairb2b123#') {
+                window.location.href = 'dashboard.html';
+            } else {
+                alert('Invalid Credentials!');
+            }
+        }
+    </script>
+</body>
+</html>
