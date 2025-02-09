@@ -1029,3 +1029,52 @@ to {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+.footer {
+    background: linear-gradient(135deg, #ff0000, #0040ff);
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
+    padding: 30px 0;
+    position: relative;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.neon-text {
+    color: #ffffff;
+    text-shadow: 0 0 10px #d900ff, 0 0 20px #ff4da6, 0 0 30px #ff0080;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: #e7ff4d;
+    text-shadow: 0 0 10px #000000;
+}
+
+.social-icon {
+    font-size: 24px;
+    margin: 0 10px;
+    color: white;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    color: #fffc4d;
+    text-shadow: 0 0 10px #000000;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
